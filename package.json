@@ -1,0 +1,27 @@
+{
+  "name": "jest-playground",
+  "version": "1.0.0",
+  "description": "Several exercises using node and jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrodriguezwebb/jest-playground.git"
+  },
+  "keywords": [
+    "node",
+    "jest"
+  ],
+  "author": "jesus rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrodriguezwebb/jest-playground/issues"
+  },
+  "homepage": "https://github.com/jrodriguezwebb/jest-playground#readme",
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "ts-node": "^10.8.1"
+  }
+}
