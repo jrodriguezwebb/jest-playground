@@ -11,6 +11,8 @@ describe('Sub function', () => {
     })
 });
 
+//describe.only('cloneArray function', () => {
+//describe.skip('cloneArray function', () => {
 describe('cloneArray function', () => {
     let mockArray = [ 1, 2, 3, 4, 5 ];
     it('Expects result of the summarized numbers', () =>{
