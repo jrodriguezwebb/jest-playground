@@ -10,9 +10,9 @@ export function calculateSquareAsync(number: any, callback: Function) {
     }, 200);
 }
 
-export function calculateSquare(number: number) {
-    const result = number * number;
+export function calculateSquare(number?: any) {
+    if(number === undefined || typeof number !== 'number') {
+        throw new Error('You must provide a number');
+    }
+    return number * number;
 }
-
-// module.exports.calculateSquareAsync = calculateSquareAsync;
-// module.exports.calculateSquare = calculateSquare;

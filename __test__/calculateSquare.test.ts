@@ -1,5 +1,4 @@
-//const calculateSquare = require('../javascript/calculateSquare');
-import { calculateSquareAsync } from  '../src/calculateSquare';
+import { calculateSquareAsync, calculateSquare } from  '../src/calculateSquare';
 
 describe('calculateSquare', () => {
     it('Should return expected result if oassed a valid input', (done) => {
@@ -15,5 +14,17 @@ describe('calculateSquare', () => {
             expect(error.message).toBe("Argument of type is expected");
             done();
         })
+    });
+
+    it('Should calculate the square of a number', () => {
+        expect(calculateSquare(5)).toBe(25);
+    });
+
+    it('Should throw an error if it is undefined', () => {
+        expect(() => calculateSquare()).toThrow('You must provide a number');
+    });
+
+    it('Should throw an error if is not a number', () => {
+        expect(() => calculateSquare('xyz')).toThrow('You must provide a number');
     });
 })
