@@ -4,7 +4,8 @@
   "description": "Several exercises using node and jest",
   "main": "index.ts",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "start": "npx ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
