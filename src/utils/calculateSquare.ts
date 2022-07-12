@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function calculateSquareAsync(number: any, callback: Function) {
     setTimeout(() => {
         if(typeof number !== 'number') {

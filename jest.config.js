@@ -11,7 +11,7 @@ module.exports = {
   bail: 0,
 
   // The directory where Jest should store its cached dependency information
-  cacheDirectory: "/tmp/jest_js",
+  cacheDirectory: '/tmp/jest_js',
 
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
@@ -23,22 +23,22 @@ module.exports = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: [
-     "/node_modules/"
+    '/node_modules/'
   ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
-    "cobertura",
-    "json",
-    "text",
-    "lcov",
+    'cobertura',
+    'json',
+    'text',
+    'lcov'
   //   "clover"
   ],
 
@@ -69,23 +69,23 @@ module.exports = {
   // globals: {},
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
-  maxWorkers: "10%",
+  maxWorkers: '10%',
 
   // An array of directory names to be searched recursively up from the requiring module's location
   moduleDirectories: [
-    "node_modules"
+    'node_modules'
   ],
 
   // An array of file extensions your modules use
   moduleFileExtensions: [
-    "js",
+    'js',
     // "mjs",
-    //"cjs",
+    // "cjs",
     // "jsx",
-    "ts",
+    'ts',
     // "tsx",
-    "json",
-    "node"
+    'json',
+    'node'
   ],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
@@ -122,7 +122,7 @@ module.exports = {
   // restoreMocks: false,
 
   // The root directory that Jest should scan for tests and modules within
-  rootDir: undefined,
+  rootDir: undefined
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -193,4 +193,4 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-};
+}

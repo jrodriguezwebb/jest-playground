@@ -1,4 +1,4 @@
-import { calculateSquareAsync, calculateSquare } from  '../src/calculateSquare';
+import { calculateSquareAsync, calculateSquare } from  '../src/utils/calculateSquare';
 
 describe('calculateSquare', () => {
     it('Should return expected result if oassed a valid input', (done) => {
