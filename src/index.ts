@@ -1,8 +1,14 @@
-import * as express from 'express'
-const app = express()
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import { booksRouter } from './controllers/books';
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+const app = express();
+const PORT = process.env.PORT || 3001;
+app.use(cors());
 
-app.listen(3000)
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.json());
+app.get('/books', booksRouter);
+
+app.listen(PORT, () => console.log(`Listening ${PORT}`));

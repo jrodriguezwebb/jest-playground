@@ -1,4 +1,4 @@
-const books = [
+export const books = [
   {
     isbn: '9781593275846',
     title: 'Eloquent JavaScript, Second Edition',
