@@ -1,4 +1,4 @@
-import { cloneArray } from '../src/cloneArray';
+import { cloneArray } from '../src/utils/cloneArray';
 
 const mockArray = [ 1, 2, 3, 4, 5 ];
 test('Expects result of the summarized numbers', () =>{

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expects result of the summarized numbers 1`] = `"Hello Jesus Rodriguez"`;

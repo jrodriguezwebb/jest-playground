@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest --verbose",
+    "test:snapshot": "jest --updateSnapshot --verbose",
     "start": "npx ts-node src/index.ts",
     "build": " npx tsc",
     "lint": "npx eslint . --fix"
