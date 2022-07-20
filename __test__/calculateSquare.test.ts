@@ -2,6 +2,7 @@ import { calculateSquareAsync, calculateSquare } from  '../src/utils/calculateSq
 
 describe('calculateSquare', () => {
     it('Should return expected result if oassed a valid input', (done) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         calculateSquareAsync(2, (error: any, result: number) => {
             expect(result).toBe(4);
             done();
@@ -9,7 +10,8 @@ describe('calculateSquare', () => {
     });
 
     it('Should return expected error due a type mismatch', (done) => {
-        calculateSquareAsync('string', (error: any, result: number) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        calculateSquareAsync('string', (error: any) => {
             expect(error).not.toBeNull();
             expect(error.message).toBe("Argument of type is expected");
             done();

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export const functions = {
     sum: (a: number, b: number) => {

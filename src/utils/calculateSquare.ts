@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // eslint-disable-next-line @typescript-eslint/ban-types
 export function calculateSquareAsync(number: any, callback: Function) {
     setTimeout(() => {
