@@ -5,6 +5,7 @@ import { books }  from '../src/models/books';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let server: any, request: supertest.SuperTest<supertest.Test>;
 describe('Testing APIs', () => {
+
     beforeEach(async () => {
         jest.resetModules();
         server = app.listen(3002);
@@ -14,6 +15,7 @@ describe('Testing APIs', () => {
     afterEach(() => {
         server.close();
     });
+
     it('Get API callback way', (done) => {
         request
             .get('/books')
@@ -62,10 +64,9 @@ describe('Testing APIs', () => {
             expect(response.body.message).toBe('Bad Request');
         });
     });
-
-    
     
     describe('Delete API', () => {
+
         it('Should return 200', () => {
             request
                 .delete('/books/65557567')
