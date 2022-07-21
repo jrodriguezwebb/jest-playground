@@ -62,4 +62,26 @@ describe('Testing APIs', () => {
             expect(response.body.message).toBe('Bad Request');
         });
     });
+
+    
+    
+    describe('Delete API', () => {
+        it('Should return 200', () => {
+            request
+                .delete('/books/65557567')
+                .expect(200)
+                .expect(response => {
+                    expect(response.text).toBe('Successfully deleted');
+                });
+        });
+
+        it('Should return 404', () => {
+            request
+                .delete('/books/123123123123')
+                .expect(404)
+                .expect(response => {
+                    expect(response.body.message).toBe('book with isbn 123123123123 was not found');
+                });
+        });
+    });
 });
