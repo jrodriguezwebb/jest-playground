@@ -14,7 +14,7 @@ describe('Testing APIs', () => {
     afterEach(() => {
         server.close();
     });
-    it('Get API callback', (done) => {
+    it('Get API callback way', (done) => {
         request
             .get('/books')
             .expect(200)
@@ -27,7 +27,7 @@ describe('Testing APIs', () => {
             .end(done);
     });
 
-    it('Get API promise', async () => {
+    it('Get API promise way', async () => {
         const response = await request
             .get('/books')
             .expect(200);
