@@ -6,7 +6,7 @@ import { books }  from '../src/models/books';
 let server: any, request: supertest.SuperTest<supertest.Test>;
 describe('Testing APIs', () => {
 
-    beforeEach(async () => {
+    beforeEach(() => {
         jest.resetModules();
         server = app.listen(3002);
         request = supertest(server);
