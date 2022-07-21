@@ -4,7 +4,7 @@
   "description": "Several exercises using node and jest",
   "main": "index.ts",
   "scripts": {
-    "test": "jest --verbose --detectOpenHandles",
+    "test": "jest --verbose --detectOpenHandles --coverage",
     "test:snapshot": "jest --updateSnapshot --verbose",
     "start": "npx ts-node src/index.ts",
     "build": " npx tsc",
