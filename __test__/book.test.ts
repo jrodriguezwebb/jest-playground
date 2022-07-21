@@ -33,7 +33,6 @@ describe('Testing APIs', () => {
         const response = await request
             .get('/books')
             .expect(200);
-
         const result = response.body;
         expect(result).toHaveLength(2);
         expect(result[0]).toStrictEqual(books[0]);
@@ -53,7 +52,6 @@ describe('Testing APIs', () => {
                 .expect(response => {
                     expect(response.text).toBe('Book is added to the database');
                 });
-            
         });
 
         it('Should return 400', async () => {
