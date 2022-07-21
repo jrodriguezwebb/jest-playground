@@ -52,7 +52,6 @@ describe('Testing APIs', () => {
                 .expect(200)
                 .expect(response => {
                     expect(response.text).toBe('Book is added to the database');
-                    server.close();
                 });
             
         });
