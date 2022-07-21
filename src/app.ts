@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 app.get('/', (req: Request, res: Response) => {
     res.send('Express + TypeScript Server');
-  });
+});
 
 // Configure routes
 booksRoutes.register(app);
