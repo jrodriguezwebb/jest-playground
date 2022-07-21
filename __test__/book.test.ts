@@ -40,7 +40,6 @@ describe('Testing APIs', () => {
     });
 
     describe('Post API', () => {
-
         it('Should return 200', () => {
             request
                 .post('/books')
@@ -63,7 +62,6 @@ describe('Testing APIs', () => {
     });
     
     describe('Delete API', () => {
-
         it('Should return 200', () => {
             request
                 .delete('/books/65557567')
